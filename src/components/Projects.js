@@ -1,76 +1,158 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
 const Projects = () => {
     return (
-        <div id="project">
-            <div class="container">
-            <h2 class="section-title text-center mb-2 h1">Projects.</h2>
-					<p class="text-center text-muted h5">These are projects that i have done so far</p>
-                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="mask flex-center">
-                                <div class="container">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-7 col-12 order-md-1 order-2">
-                                            <h4>Present your <br/> awesome product</h4>
-                                            <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br/>
-                                            necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
-                                            <a href="#">Visit</a> 
-                                        </div>
-                                        <div class="col-md-5 col-12 order-md-2 order-1">
-                                            <img src="https://i.imgur.com/NKvkfTT.png" class="mx-auto" alt="slide"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="mask flex-center">
-                                <div class="container">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-7 col-12 order-md-1 order-2">
-                                            <h4>Present your <br/>awesome product</h4>
-                                            <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br/>
-                                            necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
-                                            <a href="#">Visit</a>
-                                        </div>
-                                        <div class="col-md-5 col-12 order-md-2 order-1">
-                                            <img src="https://i.imgur.com/duWgXRs.png" class="mx-auto" alt="slide"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="mask flex-center">
-                                <div class="container">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-7 col-12 order-md-1 order-2">
-                                            <h4>Present your <br/>awesome product</h4>
-                                            <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br/>
-                                            necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
-                                            <a href="#">Visit</a> 
-                                        </div>
-                                        <div class="col-md-5 col-12 order-md-2 order-1">
-                                            <img src="https://i.imgur.com/DGkR4OQ.png" class="mx-auto" alt="slide"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                        <FontAwesomeIcon icon={faArrowLeft}/>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                        <FontAwesomeIcon icon={faArrowRight}/>
-                    </a>
-                    </div>
-                    
+        <section id="portfolio" className="portfolio section-bg">
+            <div className="container" data-aos="fade-up">
+
+                <div className="section-title">
+                    <h2>Portfolio</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
+
+                <div className="row">
+                    <div className="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" className="filter-active">All</li>
+                            <li data-filter=".filter-graphics">Graphics</li>
+                            <li data-filter=".filter-web">Websites</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-graphics">
+                        <div className="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-1.jpg" className="img-fluid" alt=""/>
+                                <div className="portfolio-info">
+                                    <h4>App 1</h4>
+                                    <p>App</p>
+                                    <div className="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 1"><i className="bx bx-plus"></i></a>
+                                        <a href="#" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div className="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-2.jpg" className="img-fluid" alt=""/>
+                                <div className="portfolio-info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                    <div className="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus"></i></a>
+                                        <a href="#" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-graphics">
+                        <div className="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-3.jpg" className="img-fluid" alt=""/>
+                                <div className="portfolio-info">
+                                    <h4>App 2</h4>
+                                    <p>App</p>
+                                    <div className="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 2"><i className="bx bx-plus"></i></a>
+                                        <a href="#" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-graphics">
+                        <div className="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-4.jpg" className="img-fluid" alt=""/>
+                                <div className="portfolio-info">
+                                    <h4>Card 2</h4>
+                                    <p>Card</p>
+                                    <div className="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 2"><i className="bx bx-plus"></i></a>
+                                        <a href="#" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div className="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt=""/>
+                                <div className="portfolio-info">
+                                    <h4>Web 2</h4>
+                                    <p>Web</p>
+                                    <div className="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 2"><i className="bx bx-plus"></i></a>
+                                        <a href="#" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div className="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-6.jpg" className="img-fluid" alt=""/>
+                                <div className="portfolio-info">
+                                    <h4>App 3</h4>
+                                    <p>App</p>
+                                    <div className="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 3"><i className="bx bx-plus"></i></a>
+                                        <a href="#" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-graphics">
+                        <div className="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-7.jpg" className="img-fluid" alt=""/>
+                                <div className="portfolio-info">
+                                    <h4>Card 1</h4>
+                                    <p>Card</p>
+                                    <div className="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 1"><i className="bx bx-plus"></i></a>
+                                        <a href="#" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div className="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt=""/>
+                                <div className="portfolio-info">
+                                    <h4>Card 3</h4>
+                                    <p>Card</p>
+                                    <div className="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 3"><i className="bx bx-plus"></i></a>
+                                        <a href="#" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div className="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt=""/>
+                                <div className="portfolio-info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                    <div className="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus"></i></a>
+                                        <a href="#" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-        </div>
+        </section>
+        
     )
 }
 

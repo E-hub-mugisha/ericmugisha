@@ -9,16 +9,23 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Resume from './components/resume';
 import Projects from './components/Projects';
+import Hero from './components/Hero';
+import Testmonial from './components/Testmonial';
+import Skills from './components/Skills';
+import Certificates from './components/Certificates';
 
 function App() {
   return (
     <>
-    <Navbar />
     <Header />
+    <Hero />
     <About />
     <Services />
+    <Skills />
     <Resume />
+    <Certificates />
     <Projects />
+    <Testmonial />
     <Contact />
     <Footer />
     </>

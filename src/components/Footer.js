@@ -1,46 +1,37 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faFacebookF , faTwitter, faGithub, faInstagram, faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const footer = () => {
   return (
     <div>
-      <footer class="bg-white text-center text-black">
-        <div class="container p-4 pb-0">
-          <section class="mb-4 font-footer" id="social">
-            <a class="btn btn-outline-black btn-floating m-1" href="#!" role="button">
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-            <a class="btn btn-outline-black btn-floating m-1" href="#!" role="button">
-              <FontAwesomeIcon icon={faFacebookF} />
-            </a>
-            <a class="btn btn-outline-black btn-floating m-1" href="#!" role="button">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a class="btn btn-outline-black btn-floating m-1" href="#!" role="button">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a class="btn btn-outline-black btn-floating m-1" href="#!" role="button">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a class="btn btn-outline-black btn-floating m-1" href="#!" role="button">
-              <FontAwesomeIcon icon={faGoogle} />
-            </a>
-          </section>
-        </div>
-        <div class="text-center p-3 footer-bottom">
-          © 2021 Copyright:&nbsp;Designed by |
-          <a class=" footer-kab" href="#"> kabosi erik</a>
-        </div>
-        <div class="scroll-top-wrapper ">
-          <span class="scroll-top-inner">
-            <i class="fa fa-2x fa-arrow-circle-up"></i>
-          </span>
+      <footer id="footer">
+        <div class="container">
+          <h3>Eric Mugisha</h3>
+          <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+          <div class="social-links">
+            <a href="#" class="twitter"><FontAwesomeIcon icon={faTwitter}/></a>
+            <a href="#" class="facebook"><FontAwesomeIcon icon={faFacebookF}/></a>
+            <a href="#" class="instagram"><FontAwesomeIcon icon={faInstagram}/></a>
+            <a href="#" class="linkedin"><FontAwesomeIcon icon={faLinkedin}/></a>
+            <a href="#" class="github"><FontAwesomeIcon icon={faGithub}/></a>
+          </div>
+          <div class="copyright">
+            &copy; Copyright 
+            <strong>
+              <span>2020</span>
+            </strong>. All Rights Reserved
+          </div>
+          <div class="credits">Designed by <a href="#">Me</a>
+          </div>
         </div>
       </footer>
     </div>
+
   )
+
+  
 }
 
 export default footer

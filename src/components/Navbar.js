@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faPhone, faUser, faTools, faToggleOn, faCog, faCalendarAlt, faDownload } from '@fortawesome/free-solid-svg-icons'
-
+import { faHome, faPhone, faUser, faTools, faToggleOn, faCog } from '@fortawesome/free-solid-svg-icons'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
     return (
@@ -17,27 +17,19 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#home"><FontAwesomeIcon icon={faHome}/>&nbsp;Home <span className="sr-only">(current)</span></a>
+                  <a className="nav-link" href="#"><FontAwesomeIcon icon={faHome}/>&nbsp;Home <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#about"><FontAwesomeIcon icon={faUser}/>&nbsp;About me!</a>
+                  <a className="nav-link" href="#"><FontAwesomeIcon icon={faUser}/>&nbsp;About me!</a>
                 </li>
                 <li className="nav-item">
-                  < a className="nav-link" href="#resume"><FontAwesomeIcon icon={faCalendarAlt}/>&nbsp;Resume</a>
+                  <a className="nav-link" href="#"><FontAwesomeIcon icon={faTools}/>&nbsp;Services</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#service"><FontAwesomeIcon icon={faTools}/>&nbsp;Services</a>
-                </li>
-                <li className="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a className="nav-link" href="#project"><FontAwesomeIcon icon={faCog}/>&nbsp;Project</a>
-                  <a className="nav-link" href="#social"><FontAwesomeIcon icon={faCog}/>&nbsp;Social Medias</a>
-                  </div>
-                  
+                  <a className="nav-link" href="#"><FontAwesomeIcon icon={faCog}/>&nbsp;Project</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#contact"><FontAwesomeIcon icon={faPhone}/>&nbsp;contact me!</a>
+                  <a className="nav-link" href="#"><FontAwesomeIcon icon={faPhone}/>&nbsp;contact me!</a>
                 </li>
               </ul>
             </div>
